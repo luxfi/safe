@@ -61,11 +61,11 @@ const NewSafe = () => {
             color="static.main"
             mb={1}
           >
-            Welcome to the Safe
+            Welcome to Lux Finance.
           </Typography>
 
           <Typography mb={5} color="static.main">
-            The most trusted decentralized custody protocol and collective asset management platform.
+            The most trusted decentralized asset management and finance protocol.
           </Typography>
 
           <Grid container spacing={3} sx={{ maxWidth: '800px' }}>

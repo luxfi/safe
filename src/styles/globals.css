@@ -1,19 +1,7 @@
 @import url(./vars.css);
 @import url(./onboard.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-@font-face {
-  font-family: 'DM Sans';
-  font-display: swap;
-  font-weight: 400;
-  src: url('/fonts/dm-sans-v11-latin-ext-regular.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'DM Sans';
-  font-display: swap;
-  font-weight: bold;
-  src: url('/fonts/dm-sans-v11-latin-ext-700.woff2') format('woff2');
-}
 
 html,
 body {

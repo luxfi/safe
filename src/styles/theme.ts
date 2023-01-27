@@ -74,7 +74,7 @@ const initTheme = (darkMode: boolean) => {
       ...Array(20).fill('none'),
     ] as Shadows,
     typography: {
-      fontFamily: 'DM Sans, sans-serif',
+      fontFamily: 'Inter, sans-serif',
       h1: {
         fontSize: '32px',
         lineHeight: '36px',
