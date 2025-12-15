@@ -31,7 +31,8 @@ const nextConfig = {
     '@hanzo/auth',
     '@hanzo/commerce',
     '@luxfi/ui',
-    '@luxfi/data'
+    '@luxfi/data',
+    '@luxfi/menu-icons'
   ],
   productionBrowserSourceMaps: true,
   webpack: svgrWebpackConfig // if we need others, set up a chain of calls.
