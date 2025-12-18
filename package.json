@@ -13,6 +13,7 @@
     "tc": "tsc --noEmit"
   },
   "dependencies": {
+    "lucide-react": "0.470.0",
     "@luxfi/ui": "5.5.2",
     "@hanzo/auth": "2.5.5",
     "@hanzo/commerce": "7.3.8",
