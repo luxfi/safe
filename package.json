@@ -13,6 +13,7 @@
     "tc": "tsc --noEmit"
   },
   "dependencies": {
+    "@splinetool/react-spline": "4.0.0",
     "lucide-react": "0.470.0",
     "@luxfi/ui": "5.5.2",
     "@hanzo/auth": "2.5.5",
