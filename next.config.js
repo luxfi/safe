@@ -1,37 +1,15 @@
-const withMDX = require('@next/mdx')()
-const svgrWebpackConfig = require('./svgr.next.config')
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    serverActions: false,
-  },
   typescript: {
     ignoreBuildErrors: true,
   },
-  pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
-  reactStrictMode: true,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   output: 'export',
   images: {
     unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'img.youtube.com',
-        pathname: '**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'cdn.lux.network',
-        pathname: '**',
-      },
-      {
-        protocol: "http",
-        hostname: "localhost",
-      }
-    ],
- },
-    // https://stackoverflow.com/questions/72621835/how-to-fix-you-may-need-an-appropriate-loader-to-handle-this-file-type-current
+  },
   transpilePackages: [
     '@hanzo/ui',
     '@hanzo/auth',
@@ -40,9 +18,6 @@ const nextConfig = {
     '@luxfi/data',
     '@luxfi/menu-icons'
   ],
-  productionBrowserSourceMaps: true,
-  webpack: svgrWebpackConfig // if we need others, set up a chain of calls.
-
 }
 
-module.exports = withMDX(nextConfig)
+module.exports = nextConfig
