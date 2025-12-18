@@ -3,6 +3,9 @@ const svgrWebpackConfig = require('./svgr.next.config')
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    serverActions: false,
+  },
   typescript: {
     ignoreBuildErrors: true,
   },
